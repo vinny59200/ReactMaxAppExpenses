@@ -32,7 +32,7 @@ function App() {
       <header className="App-header">
         <div className="expenses">
           {expenses.map(exp => (
-            <ExpenseItem title={exp.title} amount={exp.amount} date={exp.date} />
+            <ExpenseItem title={exp.title} amount={exp.amount} date={exp.date} key={exp.id}/>
           ))}</div>
       </header>
     </div>
